@@ -6,6 +6,8 @@ Project Summary: Dockerized Microservice Architecture for File Sum Calculation
 
 In this project, I have successfully implemented a Dockerized microservice architecture for file sum calculation. The project showcases my understanding and proficiency in using Docker for containerization and developing containerized applications.
 
+![image](https://github.com/kishore7403/Multi-Continer-Docker-Environment/assets/48860055/ef098a9f-b66e-49a6-8c66-1ea9d1d1b7d1)
+
 The system consists of two containers that communicate with each other through a Docker network. Container 1 acts as the orchestrator and gatekeeper, while Container 2 handles the file calculations. The goal is to receive JSON input, validate it, process the file, and return the calculated sum.
 
 Container 1 listens on port 6000 for JSON input sent via an HTTP POST request to "/calculate". It validates the input JSON to ensure a file name is provided and verifies the existence of the specified file. If the input is invalid or the file is not found, appropriate error messages are returned. Container 1 then sends the file and product parameters to Container 2 using JSON or another preferred method and returns the response received from Container 2.
